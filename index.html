@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="none">
+      <meta name="Author" content="">
+      <meta name="Copyright" content="">
+      <title>Document</title>
+      <link  rel="stylesheet"  href="css/main.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <header class="header">
+            <div class="container">
+               <div class="header__body">
+                  <a href="#" class="header__logo">
+                     <img src="" alt="#">
+                  </a>
+                  <div class="header__burger">
+                     <span></span>
+                  </div>
+                  <nav class="header__menu">
+                     <ul class="header__list">
+                        <li>
+                           <a href="#" class="nav__metronome">Metronome</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav__countdown">Countdown</a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav__clock">Clock</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </header>
+
+         <div class="content">
+            <div class="metronome">
+               <div class="container">
+                  <div class="metronome__body">
+                     <audio class="tik" src="src/audio/tik.mp3" type="audio/mpeg" preload="auto"></audio>
+                     <div class="metronome__body show">
+                        <div class="show__count">
+                           <div class="count">
+                              100
+                           </div>
+                           <div class="per">
+                              уд/мин
+                           </div>
+                        </div>
+                        <div class="show__beat">
+                           <div class="beat__button">
+                              <div class="triangle pause"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="metronome__body range">
+                        <div class="range__minus">
+                           -
+                        </div>
+                        <div class="range__range">
+                           <div class="slider"><input class="slider__range" type="range" min="1" max="240" value="60"></div>
+                        </div>
+                        <div class="range__plus">
+                           +
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="countdown">
+               <div class="countdown__container">
+                  <div class="countdown__body">
+                     <audio class="countdown__tik" src="src/audio/tik.mp3" type="audio/mpeg" preload="auto"></audio>
+                     <div class="countdown__show">00:00:00</div>
+                     <div class="countdown__panel">
+                        <div class="ctd-pl__container"><input type="number" value="0" class="countdown__hours" placeholder="hours" required></div>
+                        <div class="ctd-pl__container"><input type="number" value="0" class="countdown__minutes" placeholder="minutes" required></div>
+                        <div class="ctd-pl__container"><input type="number" value="0" class="countdown__seconds" placeholder="seconds" required></div>
+                        <div class="ctd-pl__container"><div class="countdown__start">Start</div></div>
+                        <div class="ctd-pl__container"><div class="countdown__resume">Resume</div></div>
+                        <div class="ctd-pl__container"><div class="countdown__pause">Pause</div></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="clock">
+               <div class="container">
+                  <div class="clock__body">
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src="js/burger.js"></script>
+      <script src="js/metronome.js"></script>
+      <script src="js/countdown.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
